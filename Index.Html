@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Last Assignment</title>
+
+<style>
+
+body{
+background:black;
+color:white;
+font-family:Courier New;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+margin:0;
+text-align:center;
+}
+
+.container{
+width:70%;
+}
+
+h1{
+color:red;
+letter-spacing:4px;
+}
+
+button{
+background:#111;
+color:white;
+border:1px solid red;
+padding:12px 20px;
+margin:10px;
+cursor:pointer;
+}
+
+button:hover{
+background:red;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>LAST ASSIGNMENT</h1>
+
+<p id="story">
+The college corridor is silent.
+Your final assignment is still pending.
+</p>
+
+<button onclick="scene1()">Enter Elevator</button>
+
+<button onclick="scene2()">Take Stairs</button>
+
+</div>
+
+<script>
+
+function scene1(){
+
+document.getElementById("story").innerHTML =
+"The elevator doors open slowly. The lights flicker.";
+
+}
+
+function scene2(){
+
+document.getElementById("story").innerHTML =
+"You hear footsteps behind you while descending the stairs.";
+
+}
+
+</script>
+
+</body>
+</html>
